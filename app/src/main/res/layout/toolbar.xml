@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#be0b0b"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:id="@+id/hambergurmenu"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:padding="13dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/menu" />
+
+                <ImageView
+                    android:id="@+id/afglogo"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toEndOf="@+id/imgsearch"
+                    android:layout_toStartOf="@+id/hambergurmenu"
+                    android:src="@drawable/afghanistanema" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="?attr/actionBarSize">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_weight="1"
+                android:layout_gravity="left"
+                android:orientation="horizontal"
+                android:layout_height="?attr/actionBarSize">
+                <ImageView
+                    android:id="@+id/imgfavactivity"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="0dp"
+                    android:scaleType="centerCrop"
+                    android:padding="16dp"
+                    android:src="@drawable/fav" />
+                <ImageView
+                    android:id="@+id/favicon"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:padding="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/search" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>

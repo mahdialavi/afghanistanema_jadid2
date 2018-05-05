@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/swpReload"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="#f1efef"
+            android:layout_height="wrap_content">
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#a9a9a9" />
+            <Button
+                android:id="@+id/click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="click" />
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvPersons"
+                    android:layout_width="match_parent"
+                    android:scrollIndicators="none"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
+
+
+
